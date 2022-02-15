@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+  <head>
+    <title>Tsz's Portfolio!</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="keywords" content="portfolio, tsz, yin, yung, imperial, mechanical, engineering" />
+    <meta name="description" content="Hey! I'm Tsz, a penultimate year Mechanical Engineering student at Imperial College London. Welcome to my portfolio!" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <!-- Favicon Implement Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png" />
+    <link rel="manifest" href="icon/site.webmanifest" />
+    <style>
+      /*Styling for image zoom on hover*/
+      .fit:hover img {
+        transform: scale(1.1);
+        filter: contrast(100%);
+      }
+      /*Styling for icon animations on landing page*/
+      .icons > li {
+        display: none;
+        transition: 0.3s all ease-in-out;
+      }
+      .icons:hover > li {
+        opacity: 0.5;
+      }
+      .icons:hover > li:hover {
+        transform: scale(1.5);
+        opacity: 1;
+      }
+      /*Styling for text overlay + zoom on image hover */
+      /* Reference: https://codepen.io/chrisdothtml/pen/OVmgwK?editors=1100 */
+      .fit {
+        /*only margin and overflow for zoom on hover*/
+        display: inline-block;
+        margin: 10px;
+        text-align: left;
+        opacity: 0.99;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+        margin: 0 auto;
+      }
+      .fit:before {
+        content: "";
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+        width: 100%;
+        height: 50%;
+        opacity: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 2;
+        transition-property: top, opacity;
+        transition-duration: 0.3s;
+      }
+      .fit img {
+        display: block;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        /*below for image zoom on hover*/
+        width: 100%;
+        height: 100%;
+        transition: 0.5s all ease-in-out;
+        filter: contrast(85%);
+      }
+      .fit .details {
+        font-size: 16px;
+        padding: 20px;
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+      }
+      .fit .details span {
+        display: block;
+        opacity: 0;
+        position: relative;
+        top: 100px;
+        transition-property: top, opacity;
+        transition-duration: 0.3s;
+        transition-delay: 0s;
+      }
+      .fit .details .title {
+        line-height: 1;
+        font-weight: 600;
+        font-size: 18px;
+      }
+      .fit .details .info {
+        line-height: 1.2;
+        margin-top: 5px;
+        font-size: 12px;
+      }
+      .fit:focus:before,
+      .fit:focus span,
+      .fit:hover:before,
+      .fit:hover span {
+        opacity: 1;
+      }
+      .fit:focus:before,
+      .fit:hover:before {
+        top: 50%;
+      }
+      .fit:focus span,
+      .fit:hover span {
+        top: 0;
+      }
+      .fit:focus .title,
+      .fit:hover .title {
+        transition-delay: 0.15s;
+      }
+      .fit:focus .info,
+      .fit:hover .info {
+        transition-delay: 0.25s;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+      <h1>Tsz Yin Yung</h1>
+      <nav>
+        <ul>
+          <li><a href="#intro">Hello</a></li>
+          <li><a href="#one">Who I Am</a></li>
+          <li><a href="#two">What I do</a></li>
+          <li><a href="#work">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Intro -->
+    <section id="intro" class="main style1 dark fullscreen">
+      <div class="content">
+        <header>
+          <h2>Hi, ‎ ‎I'm Tsz.</h2>
+        </header>
+        <ul class="icons">
+          <li>
+            <a href="https://www.linkedin.com/in/tyyung/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a>
+          </li>
+          <li>
+            <a href="" class="icon brands icon-sign-blank"><span class="label"></span></a>
+          </li>
+          <li>
+            <a href="https://github.com/tszdabee" class="icon brands fa-github"><span class="label">Github</span></a>
+          </li>
+          <li>
+            <a href="" class="icon brands icon-sign-blank"><span class="label"></span></a>
+          </li>
+          <li>
+            <a href="mailto:tyy19@imperial.ac.uk"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+        <p><b>I'm an aspiring engineer based in Hong Kong and London.</b></p>
+        <p>I love building stuff and bringing innovative ideas to life.</p>
+        <footer>
+          <a href="#one" class="button style2 down">More</a>
+        </footer>
+      </div>
+    </section>
+
+    <!-- One -->
+    <section id="one" class="main style2 right dark fullscreen">
+      <div class="content box style2">
+        <header>
+          <h2>Who I Am</h2>
+        </header>
+        <p>
+          I'm currently a
+          <strong
+            >penultimate year
+            <a href="https://www.imperial.ac.uk/study/ug/courses/mechanical-engineering-department/mechanical-engineering-meng/">MEng Mechanical Engineering</a>
+            student at Imperial College London</strong
+          >
+          with a keen interest in Research & Development.
+        </p>
+      </div>
+      <a href="#two" class="button style2 down anchored">Next</a>
+    </section>
+
+    <!-- Two -->
+    <section id="two" class="main style2 left dark fullscreen">
+      <div class="content box style2">
+        <header>
+          <h2>What I do</h2>
+        </header>
+        <p>
+          I'm currently a
+          <strong>penultimate year MEng Mechanical Engineering student at Imperial College London</strong>
+          with a keen interest in Research & Development.
+        </p>
+      </div>
+      <a href="#work" class="button style2 down anchored">Next</a>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="main style3 primary dark">
+      <div class="content">
+        <header>
+          <h2>Projects</h2>
+          <p>Here's some of the projects I've done. Come take a look!</p>
+        </header>
+
+        <!-- Gallery  -->
+        <div class="gallery">
+          <article class="from-left">
+            <a href="https://www.google.com/" data-poptrox="ignore" class="image fit"
+              ><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" />
+              <div class="details"><span class="title">Motorized Vehicle</span><span class="info">Speedy thing goes fast with wheels.</span></div></a
+            >
+          </article>
+          <article class="from-right">
+            <a href="https://www.google.com/" data-poptrox="ignore" class="image fit"
+              ><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" />
+              <div class="details"><span class="title">Cool Title</span><span class="info">Description goes here</span></div></a
+            >
+          </article>
+          <article class="from-left">
+            <a href="https://www.google.com/" data-poptrox="ignore" class="image fit"
+              ><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" />
+              <div class="details"><span class="title">Cool Title</span><span class="info">Description goes here</span></div></a
+            >
+          </article>
+          <article class="from-right">
+            <a href="https://www.google.com/" data-poptrox="ignore" class="image fit"
+              ><img src="images/thumbs/04.jpg" title="Carry on" alt="" />
+              <div class="details"><span class="title">Cool Title</span><span class="info">Description goes here</span></div></a
+            >
+          </article>
+          <article class="from-left">
+            <a href="https://www.google.com/" data-poptrox="ignore" class="image fit"
+              ><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" />
+              <div class="details"><span class="title">Cool Title</span><span class="info">Description goes here</span></div></a
+            >
+          </article>
+          <article class="from-right">
+            <a href="images/fulls/06.jpg" data-poptrox="ignore" class="image fit"
+              ><img src="images/thumbs/06.jpg" title="Bent IX" alt="" />
+              <div class="details"><span class="title">Cool Title</span><span class="info">Description goes here</span></div></a
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="main style3 secondary dark">
+      <div class="content">
+        <header>
+          <h2>Let's connect.</h2>
+          <p>
+            I'd love to hear from you. Ask me about my projects, share your favorite song, or just simply connect.<br />
+            Shoot me an email at
+            <a href="mailto:tyy19@imperial.ac.uk">tyy19@imperial.ac.uk</a> or get in touch below :)
+          </p>
+        </header>
+        <div class="box">
+          <form method="post" action="#">
+            <div class="fields">
+              <div class="field half">
+                <input type="text" name="name" placeholder="Name" />
+              </div>
+              <div class="field half">
+                <input type="email" name="email" placeholder="Email" />
+              </div>
+              <div class="field">
+                <textarea name="message" placeholder="Message" rows="6"></textarea>
+              </div>
+            </div>
+            <ul class="actions special">
+              <li><input type="submit" value="Send Message" /></li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <!-- Icons -->
+      <ul class="icons">
+        <li>
+          <a href="https://www.linkedin.com/in/tyyung/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a>
+        </li>
+        <li>
+          <a href="https://github.com/tszdabee" class="icon brands fa-github"><span class="label">Github</span></a>
+        </li>
+        <li>
+          <a href="mailto:tyy19@imperial.ac.uk"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+
+      <!-- Menu -->
+      <ul class="menu">
+        <li>&copy; 2021. All rights reserved</li>
+        <li>Design adapted from <a href="https://html5up.net">HTML5 UP</a></li>
+      </ul>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
