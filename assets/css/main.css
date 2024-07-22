@@ -2454,7 +2454,7 @@ body.is-touch .main {
 
 .typewriter::before {
   content: "";
-  animation: typing 13.5s infinite;
+  animation: typing 20.0s infinite;
 }
 
 .typewriter::after {
